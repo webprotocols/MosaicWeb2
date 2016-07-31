@@ -54,6 +54,8 @@ configurations {
 }
 
 dependencies {
+
+	
 	compile('org.springframework.boot:spring-boot-starter-web')
 	providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
@@ -79,6 +81,19 @@ dependencies {
 	 * 8. SiteMesh 설정
 	 */
 	compile group: 'org.sitemesh', name: 'sitemesh', version: '3.0.0'
+	
+	/*
+	 * 10. Security 설정
+	 */
+	compile('org.springframework.boot:spring-boot-starter-security')
+	
+	/*
+	 * 11. JSTL & Security tablib 설정
+	 */
+	compile group: 'javax.servlet', name: 'jstl', version: '1.2'
+	compile group: 'org.springframework.security', name: 'spring-security-taglibs', version: '4.0.4.RELEASE'
+	
+	
 	 
 	 
 	

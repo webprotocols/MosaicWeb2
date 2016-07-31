@@ -15,6 +15,8 @@
 	
 </ol>
 
+<a href="/admin/admin.jsp">어드민 페이지로 이동</a><br>
+
 <%
 	for (int i=0; i<10; i++) {
 		log("i = " + i);
