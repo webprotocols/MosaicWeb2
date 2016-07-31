@@ -21,7 +21,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 		account.setUserid("admin");
 		account.setPassword("1234");
 		account.setRole("ROLE_ADMIN");
-		account.setNick("xxx");
+//		account.setNick("xxx");
 		
 		return new UserDetailsImpl(account);
 		
