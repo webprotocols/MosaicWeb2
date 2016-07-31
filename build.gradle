@@ -24,6 +24,12 @@ apply plugin: 'war'
 apply plugin: 'application'
 
 mainClassName = 'com.hybrid.fx.MainApplication'
+/*
+ * 9. Encoding 설정
+ */
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+
 
 war {
 	baseName = 'MosaicWeb'
@@ -68,6 +74,13 @@ dependencies {
 	 * 7. Gluon 설정
 	 */
 	compile 'com.gluonhq:particle:1.1.0'
+	
+	/*
+	 * 8. SiteMesh 설정
+	 */
+	compile group: 'org.sitemesh', name: 'sitemesh', version: '3.0.0'
+	 
+	 
 	
 }
 
